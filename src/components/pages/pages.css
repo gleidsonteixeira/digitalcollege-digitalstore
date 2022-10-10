@@ -1,0 +1,61 @@
+*{margin: 0;padding: 0;border: 0;list-style: none;text-decoration: none;box-sizing: border-box;font-family: 'Inter', sans-serif;}
+
+.smoth, .smoth:hover{transition-duration: .2s;}
+.click{cursor: pointer;}
+
+#header{height: 80px;display: flex;align-items: center;padding: 0 100px;}
+#header img{height: 30px;}
+
+#account{padding: 100px;background-image: linear-gradient(#B5B6F2, #EFEFFF);position: relative;}
+#account form{width: 580px;background-color: #FFFFFF;border-radius: 4px;padding: 30px;}
+#account form h3{font-size: 32px;letter-spacing: 1px;margin-bottom: 20px;}
+#account form p{color: #474747;margin-bottom: 30px;}
+#account form label{font-size: 12px;font-weight: bold;line-height: 24px;display: block;}
+#account form input{width: 100%;line-height: 60px;background-color: #F6F6F6;border-radius: 4px;padding: 0 16px;margin-bottom: 20px;}
+#account form button{width: 100%;line-height: 48px;background-color: #C92071;border-radius: 8px;text-align: center;color: #FFFFFF;font-size: 16px;font-weight: bold;margin: 30px 0;}
+#account form button:hover{background-color: #b1135f;}
+#account form a{text-decoration: underline;color: #474747;}
+#account form a:hover{color: #C92071;}
+#account form .social-login{display: flex;justify-content: center;align-items: center;}
+#account form .social-login img{height: 26px;margin-left: 16px;}
+#account form .social-login p{margin: 0;}
+#account .tenis1{width: 300px;height: auto;position: absolute;top: 100px;left: calc(50% + 50px);}
+#account .tenis2{width: 300px;height: auto;position: absolute;bottom: 50px;right: 100px;}
+
+#account-drip{display: flex;justify-content: center;padding: 100px;background-color: #F9F8FE;position: relative;}
+#account-drip form{width: 750px;}
+#account-drip form .box{background-color: #FFFFFF;border-radius: 4px;padding: 30px;margin-bottom: 10px;}
+#account-drip form .divider{width: 100%;height: 1px;background-color: #CCCCCC;margin: 20px 0;}
+#account-drip form h3{font-size: 32px;letter-spacing: 1px;margin-bottom: 20px;}
+#account-drip form p{color: #474747;font-size: 14px;}
+#account-drip form label{font-size: 12px;font-weight: bold;line-height: 24px;display: block;}
+#account-drip form input{width: 100%;line-height: 60px;background-color: #F6F6F6;border-radius: 4px;padding: 0 16px;margin-bottom: 20px;}
+#account-drip form button{width: 100%;line-height: 48px;background-color: #C92071;border-radius: 8px;text-align: center;color: #FFFFFF;font-size: 16px;font-weight: bold;margin: 30px 0;}
+#account-drip form button:hover{background-color: #b1135f;}
+#account-drip form a{text-decoration: underline;color: #474747;}
+#account-drip form a:hover{color: #C92071;}
+#account-drip form .terms{display: flex;}
+#account-drip form .terms input{width: 40px;height: 16px;margin-top: 5px;}
+#account-drip form .terms p{flex: 1;}
+
+
+@media only screen and ( max-width: 768px ){
+    #account form{width: 100%;}
+    #account .tenis1,
+    #account .tenis2{display: none;}
+    #account-drip form{width: 100%;}
+}
+
+@media only screen and ( max-width: 480px ){
+    header{padding: 0 16px;justify-content: center;}
+    #account{padding: 60px 30px;}
+    #account form h3{font-size: 22px;text-align: center;}
+    #account form p{font-size: 14px;text-align: center;}
+    #account form .social-login{flex-wrap: wrap;}
+    #account form .social-login p{width: 100%;margin-bottom: 16px;}
+    #account form .social-login img{margin: 0 10px;}
+    #account-drip{padding: 60px 30px;}
+    #account-drip form h3{text-align: center;}
+
+}
+
