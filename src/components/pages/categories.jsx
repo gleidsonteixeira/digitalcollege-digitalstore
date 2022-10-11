@@ -3,15 +3,13 @@ import Head from "../head";
 import Foot from "../foot";
 import "./pages.css";
 
-export default function Orders(){
+export default function Categories(){
     
     return(
         <>
             <Head />
             <main>
-                <section id="orders">
-                    Pedidos
-                </section>
+                Categorias
             </main>
             <Foot />
         </>

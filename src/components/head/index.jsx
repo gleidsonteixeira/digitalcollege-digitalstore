@@ -1,11 +1,16 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./head.css";
 import logo from "./../../assets/logo_digital_store.png";
 import icon_user from "./../../assets/icon_user.png";
 import icon_cart from "./../../assets/icon_cart.png";
 
 export default function Head() {
+
+    let location = useLocation();
+    function active(path){
+        return location.pathname === path ? "smoth active" : "smoth";
+    }
 
     return (
         <header>
@@ -23,16 +28,16 @@ export default function Head() {
             </div>
             <ul>
                 <li>
-                    <Link to="#!" className="smoth">Home</Link>
+                    <Link to="/" className={active("/")}>Home</Link>
                 </li>
                 <li>
-                    <Link to="#!" className="smoth">Produtos</Link>
+                    <Link to="/products" className={active("/produtos")}>Produtos</Link>
                 </li>
                 <li>
-                    <Link to="#!" className="smoth">Categorias</Link>
+                    <Link to="/categories" className={active("/categorias")}>Categorias</Link>
                 </li>
                 <li>
-                    <Link to="#!" className="smoth active">Meus Pedidos</Link>
+                    <Link to="/orders" className={active("/orders")}>Meus Pedidos</Link>
                 </li>
             </ul>
         </header>

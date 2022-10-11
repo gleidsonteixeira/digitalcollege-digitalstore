@@ -5,7 +5,7 @@
 
 header{display: flex;flex-wrap: wrap;padding: 35px 100px;justify-content: space-between;align-items: center;}
 header img{height: 40px;}
-header ul{width: 100%;display: flex;margin-top: 16px;}
+header ul{width: 100%;display: flex;margin-top: 40px;}
 header ul li{margin-right: 16px;}
 header ul li a{display: block;line-height: 40px;color: #474747;position: relative;}
 header ul li a::before{content: "";width: 0;height: 2px;background-color: #C92071;position: absolute;top: 100%;left: 50%;transition-duration: .2s;}
@@ -18,8 +18,8 @@ header .search form{width: 500px;height: 60px;border-radius: 4px;background-colo
 header .search form input{height: 60px;padding-left: 16px;background-color: transparent;flex: 1;}
 header .search form input:focus{outline: none;}
 header .search form button{width: 60px;height: 60px;position: relative;background-color: transparent;}
-header .search form button::before{content: "";width: 18px;height: 18px;border: 1px solid #666666;position: absolute;top: calc(50% - 9px);left: calc(50% - 9px);border-radius: 10px;}
-header .search form button::after{content: "";width: 6px;height: 1px;background-color: #666666;position: absolute;top: calc(50% + 10px);left: calc(50% + 8px);transform: rotate(45deg);}
+header .search form button::before{content: "";width: 18px;height: 18px;border: 2px solid #666666;position: absolute;top: calc(50% - 9px);left: calc(50% - 9px);border-radius: 15px;}
+header .search form button::after{content: "";width: 6px;height: 2px;background-color: #666666;position: absolute;top: calc(50% + 10px);left: calc(50% + 8px);transform: rotate(45deg);}
 header .search form button:hover::before{border-color: #C92071;}
 header .search form button:hover::after{background-color: #C92071;}
 header .user-info{display: flex;align-items: center;}

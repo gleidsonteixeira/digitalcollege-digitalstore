@@ -1,17 +1,16 @@
+import "./pages.css";
 import React from "react";
 import Head from "../head";
 import Foot from "../foot";
-import "./pages.css";
+import Banner from "../banner";
 
-export default function Orders(){
+export default function Home(){
     
     return(
         <>
             <Head />
             <main>
-                <section id="orders">
-                    Pedidos
-                </section>
+                <Banner />
             </main>
             <Foot />
         </>
