@@ -1,6 +1,6 @@
-*{margin: 0;padding: 0;border: 0;list-style: none;text-decoration: none;box-sizing: border-box;font-family: 'Inter', sans-serif;}
 
-.smoth, .smoth:hover{transition-duration: .2s;}
+.smoth,
+.smoth:hover{transition-duration: .2s;}
 .click{cursor: pointer;}
 
 header{display: flex;flex-wrap: wrap;padding: 35px 100px;justify-content: space-between;align-items: center;}
@@ -14,8 +14,8 @@ header ul li a:hover::before{left: 0;width: 100%;}
 header ul li a.active{font-weight: bold;color: #C92071;}
 header ul li a.active::before{left: 0;width: 100%;}
 header .search{flex: 1;margin-left: 26px;}
-header .search form{width: 500px;height: 60px;border-radius: 4px;background-color: #F9F8FE;display: flex;}
-header .search form input{height: 60px;padding-left: 16px;background-color: transparent;flex: 1;}
+header .search form{height: 60px;border-radius: 4px;background-color: #F9F8FE;display: flex;}
+header .search form input{height: 60px;padding-left: 24px;background-color: transparent;flex: 1;}
 header .search form input:focus{outline: none;}
 header .search form button{width: 60px;height: 60px;position: relative;background-color: transparent;}
 header .search form button::before{content: "";width: 18px;height: 18px;border: 2px solid #666666;position: absolute;top: calc(50% - 9px);left: calc(50% - 9px);border-radius: 15px;}
@@ -24,4 +24,13 @@ header .search form button:hover::before{border-color: #C92071;}
 header .search form button:hover::after{background-color: #C92071;}
 header .user-info{display: flex;align-items: center;}
 header .user-info img{margin-right: 10px;}
+header .user-info img.cart{height: 29px;}
+header .user-info img.cart.spaced{margin-left: 230px;}
+header .user-info img.user{margin-left: 30px;}
 header .user-info h6{font-size: 14px;font-weight: bold;color: #474747;}
+header .user-info a{min-width: 115px;text-align: center;line-height: 40px;margin-left: 30px;text-decoration: underline;color: #474747;transition-duration: .2s;}
+header .user-info a:hover{color: #C92071;}
+header .user-info button{min-width: 115px;text-align: center;line-height: 40px;margin-left: 30px;text-decoration: none;background-color: #C92071;color: #FFFFFF;font-weight: bold;border-radius: 8px;margin-right: 72px;transition-duration: .2s;}
+header .user-info button:hover{color: #FFFFFF;background-color: #991956;}
+
+

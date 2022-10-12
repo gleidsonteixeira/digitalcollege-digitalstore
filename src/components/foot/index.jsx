@@ -1,7 +1,7 @@
 import React from "react";
-import "./foot.css";
-import logo from "./../../assets/logo_digital_store_negativo.png";
 import { Link } from "react-router-dom";
+import "./style.css";
+import logo from "./../../assets/logo_digital_store_negativo.png";
 
 export default function Foot(){
 

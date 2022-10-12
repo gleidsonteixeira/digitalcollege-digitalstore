@@ -1,9 +1,8 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import "./head.css";
+import "./style.css";
 import logo from "./../../assets/logo_digital_store.png";
-import icon_user from "./../../assets/icon_user.png";
-import icon_cart from "./../../assets/icon_cart.png";
+import Logged from "./logged";
 
 export default function Head() {
 
@@ -21,11 +20,7 @@ export default function Head() {
                     <button className="smoth click"></button>
                 </form>
             </div>
-            <div className="user-info">
-                <img src={icon_cart} alt="Cart"/>
-                <img src={icon_user} alt="User"/>
-                <h6>Olá, Gleidson Teixeira</h6>
-            </div>
+            <Logged />
             <ul>
                 <li>
                     <Link to="/" className={active("/")}>Home</Link>
