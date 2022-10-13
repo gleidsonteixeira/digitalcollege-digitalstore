@@ -1,0 +1,16 @@
+
+#collections{padding: 38px 100px;background-color: #F9F8FE;}
+#collections h5{font-size: 24px;font-weight: 700;line-height: 38px;letter-spacing: .75px;margin-bottom: 20px;color: #474747;}
+#collections h5.center{text-align: center;}
+#collections .destaques{display: flex;justify-content: space-between;margin-bottom: 100px;}
+#collections .destaques li{width: calc(33.33% - 8px);background-color: #D8E3F2;border-radius: 8px;position: relative;display: flex;justify-content: flex-end;}
+#collections .destaques li .content{position: absolute;top: 0;left: 0;padding-left: 30px;padding-top: 34px;}
+#collections .destaques li .content span{display: inline-block;background-color: #E7FF86;padding: 5px 15px;border-radius: 20px;font-weight: 700;font-size: 14px;line-height: 22px;letter-spacing: .75px;text-transform: uppercase;margin-bottom: 10px;}
+#collections .destaques li .content h4{font-size: 32px;font-weight: 700;line-height: 36px;letter-spacing: 1px;width: 200px;margin-bottom: 20px;color: #1f1f1f;}
+#collections .destaques li .content a{line-height: 48px;display: inline-block;border-radius: 8px;background-color: #f5f5f5;padding: 0 40px;color: #C92071;font-weight: 700;font-size: 14px;transition: .2s;}
+#collections .destaques li .content a:hover{background-color: #B5B6F2;color: #ffffff;}
+#collections .icons{display: flex;justify-content: center;}
+#collections .icons li{margin: 0 24px;text-align: center;}
+#collections .icons li .icon{width: 104px;height: 104px;border-radius: 100%;background-color: #ffffff;margin-bottom: 12px;display: flex;justify-content: center;align-items: center;flex-direction: column;transition-duration: .2s;}
+#collections .icons li .icon.active{box-shadow: 0 4px 25px rgba(0,0,0,.05);}
+#collections .icons li h6{font-size: 14px;font-weight: 700;line-height: 22px;letter-spacing: .75px;color: #474747;}

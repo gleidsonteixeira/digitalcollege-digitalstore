@@ -30,7 +30,11 @@ header .user-info img.user{margin-left: 30px;}
 header .user-info h6{font-size: 14px;font-weight: bold;color: #474747;}
 header .user-info a{min-width: 115px;text-align: center;line-height: 40px;margin-left: 30px;text-decoration: underline;color: #474747;transition-duration: .2s;}
 header .user-info a:hover{color: #C92071;}
-header .user-info button{min-width: 115px;text-align: center;line-height: 40px;margin-left: 30px;text-decoration: none;background-color: #C92071;color: #FFFFFF;font-weight: bold;border-radius: 8px;margin-right: 72px;transition-duration: .2s;}
+header .user-info button{min-width: 115px;text-align: center;line-height: 40px;margin-left: 30px;text-decoration: none;background-color: #C92071;color: #FFFFFF;font-weight: bold;border-radius: 8px;margin-right: 72px;transition-duration: .2s;cursor: pointer;}
 header .user-info button:hover{color: #FFFFFF;background-color: #991956;}
 
 
+@media ( max-width: 600px ){
+
+    
+}

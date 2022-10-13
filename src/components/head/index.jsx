@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
+
 import "./style.css";
 import logo from "./../../assets/logo_digital_store.png";
 import Logged from "./logged";
@@ -26,10 +27,10 @@ export default function Head() {
                     <Link to="/" className={active("/")}>Home</Link>
                 </li>
                 <li>
-                    <Link to="/products" className={active("/produtos")}>Produtos</Link>
+                    <Link to="/products" className={active("/products")}>Produtos</Link>
                 </li>
                 <li>
-                    <Link to="/categories" className={active("/categorias")}>Categorias</Link>
+                    <Link to="/categories" className={active("/categories")}>Categorias</Link>
                 </li>
                 <li>
                     <Link to="/orders" className={active("/orders")}>Meus Pedidos</Link>

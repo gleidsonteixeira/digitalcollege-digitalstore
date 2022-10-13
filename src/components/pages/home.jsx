@@ -3,6 +3,7 @@ import React from "react";
 import Head from "../head";
 import Foot from "../foot";
 import Banner from "../banner";
+import Collections from "../collections";
 
 export default function Home(){
     
@@ -10,7 +11,8 @@ export default function Home(){
         <>
             <Head />
             <main>
-                <Banner />
+                {/* <Banner />
+                <Collections /> */}
             </main>
             <Foot />
         </>
