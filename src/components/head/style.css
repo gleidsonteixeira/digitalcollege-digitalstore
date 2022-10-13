@@ -4,7 +4,8 @@
 .click{cursor: pointer;}
 
 header{display: flex;flex-wrap: wrap;padding: 35px 100px;justify-content: space-between;align-items: center;}
-header img{height: 40px;}
+header img{height: 40px;position: relative;z-index: 1;}
+header .menu-btn{width: 71px;display: none;position: relative;z-index: 1;}
 header ul{width: 100%;display: flex;margin-top: 40px;}
 header ul li{margin-right: 16px;}
 header ul li a{display: block;line-height: 40px;color: #474747;position: relative;}
@@ -13,7 +14,7 @@ header ul li a:hover{color: #C92071;}
 header ul li a:hover::before{left: 0;width: 100%;}
 header ul li a.active{font-weight: bold;color: #C92071;}
 header ul li a.active::before{left: 0;width: 100%;}
-header .search{flex: 1;margin-left: 26px;}
+header .search{flex: 1;margin-left: 26px;position: relative;z-index: 1;}
 header .search form{height: 60px;border-radius: 4px;background-color: #F9F8FE;display: flex;}
 header .search form input{height: 60px;padding-left: 24px;background-color: transparent;flex: 1;}
 header .search form input:focus{outline: none;}
@@ -22,7 +23,7 @@ header .search form button::before{content: "";width: 18px;height: 18px;border: 
 header .search form button::after{content: "";width: 6px;height: 2px;background-color: #666666;position: absolute;top: calc(50% + 10px);left: calc(50% + 8px);transform: rotate(45deg);}
 header .search form button:hover::before{border-color: #C92071;}
 header .search form button:hover::after{background-color: #C92071;}
-header .user-info{display: flex;align-items: center;}
+header .user-info{display: flex;align-items: center;position: relative;z-index: 1;}
 header .user-info img{margin-right: 10px;}
 header .user-info img.cart{height: 29px;}
 header .user-info img.cart.spaced{margin-left: 230px;}
@@ -33,8 +34,24 @@ header .user-info a:hover{color: #C92071;}
 header .user-info button{min-width: 115px;text-align: center;line-height: 40px;margin-left: 30px;text-decoration: none;background-color: #C92071;color: #FFFFFF;font-weight: bold;border-radius: 8px;margin-right: 72px;transition-duration: .2s;cursor: pointer;}
 header .user-info button:hover{color: #FFFFFF;background-color: #991956;}
 
+header .user-info .search-icon{width: 24px;height: 24px;position: relative;background-color: transparent;margin-right: 16px;display: none;}
+header .user-info .search-icon::before{content: "";width: 14px;height: 14px;border: 2px solid #CCCCCC;position: absolute;top: calc(50% - 9px);left: calc(50% - 9px);border-radius: 15px;}
+header .user-info .search-icon::after{content: "";width: 6px;height: 2px;background-color: #CCCCCC;position: absolute;top: calc(50% + 7px);left: calc(50% + 4px);transform: rotate(45deg);}
+header .user-info .search-icon:hover::before{border-color: #C92071;}
+header .user-info .search-icon:hover::after{background-color: #C92071;}
 
 @media ( max-width: 600px ){
-
-    
+    header{padding: 20px 24px;position: fixed;width: 100%;top: 0;left: 0;background-color: #FFFFFF;}
+    header .menu-btn{display: block;position: relative;}
+    header .menu-btn::after{content: "";width: 20px;height: 2px;background-color: #474747;position: absolute;top: calc(50% - 1px);left: 1;}
+    header img{height: 24px;}
+    header ul{width: calc(100% - 80px);height: 100vh;padding: 30px;padding-top: 139px;background-color: #FFFFFF;bottom: 0;left: -100%; position: fixed;display: initial;transition-duration: .2s;}
+    header ul::after{content: "Páginas";font-size: 16px;line-height: 24px;font-weight: 700;letter-spacing: .75px;position: absolute;top: 99px;left: 30px;}
+    header ul.active{left: 0%;}
+    header ul li a{display: inline-block;}
+    header .search{display: none;}
+    header .user-info .search-icon{display: initial;}
+    header .user-info img{margin-right: 0;}
+    header .user-info a,
+    header .user-info button{display: none;}
 }

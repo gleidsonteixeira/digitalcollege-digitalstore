@@ -4,16 +4,25 @@ import { Link, useLocation } from "react-router-dom";
 import "./style.css";
 import logo from "./../../assets/logo_digital_store.png";
 import Logged from "./logged";
+import Menu from "./menu";
 
 export default function Head() {
 
-    let location = useLocation();
-    function active(path){
-        return location.pathname === path ? "smoth active" : "smoth";
+    const [menu, setMenu] = React.useState(false);
+
+    function toggleMenu(){
+        if(menu){
+            setMenu(false);
+        }else{
+            setMenu(true);
+        }
     }
+
+
 
     return (
         <header>
+            <div className="menu-btn" onClick={() => { toggleMenu() }}></div>
             <Link to="/"><img src={logo} alt="Digital Store"/></Link>
             <div className="search">
                 <form>
@@ -22,20 +31,7 @@ export default function Head() {
                 </form>
             </div>
             <Logged />
-            <ul>
-                <li>
-                    <Link to="/" className={active("/")}>Home</Link>
-                </li>
-                <li>
-                    <Link to="/products" className={active("/products")}>Produtos</Link>
-                </li>
-                <li>
-                    <Link to="/categories" className={active("/categories")}>Categorias</Link>
-                </li>
-                <li>
-                    <Link to="/orders" className={active("/orders")}>Meus Pedidos</Link>
-                </li>
-            </ul>
+            <Menu active={menu} />
         </header>
     );
 }

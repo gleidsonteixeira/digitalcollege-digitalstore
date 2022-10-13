@@ -21,6 +21,7 @@ export default function Logged() {
         return(
             <>
                 <Link to="signup">Cadastre-se</Link>
+                <div className="search-icon"></div>
                 <button onClick={logar} className="fill">Entrar</button>
                 <img src={icon_cart} className="cart" alt="Cart"/>
             </>
