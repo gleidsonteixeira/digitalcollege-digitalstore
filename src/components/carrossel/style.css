@@ -1,0 +1,12 @@
+.carrossel{position: relative;}
+.carrossel ul{width: 100%;height: 681px;position: relative;}
+.carrossel ul li{width: 100%;position: absolute;top: 0;left: 0;opacity: 0;visibility: hidden;transition-duration: .2s;}
+.carrossel ul li.active{position: relative;opacity: 1;visibility: visible;}
+.carrossel-pills{position: absolute;bottom: 53px;left: 50%;transform: translateX(-50%);display: flex;}
+.carrossel-pills .carrossel-pill{width: 12px;height: 12px;border-radius: 6px;background-color: #CCCCCC;margin: 0 5px;cursor: pointer;}
+.carrossel-pills .carrossel-pill.active{background-color: #C92071;}
+
+@media ( max-width: 600px ){
+    .carrossel-pills{bottom: 40px;}
+}
+
