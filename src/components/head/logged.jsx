@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import icon_user from "./../../assets/icon_user.png";
 import icon_cart from "./../../assets/icon_cart.png";
 
-export default function Logged() {
+export default function Logged(props) {
 
     const [client, setClient] = React.useState();
 
@@ -21,7 +21,7 @@ export default function Logged() {
         return(
             <>
                 <Link to="signup">Cadastre-se</Link>
-                <div className="search-icon"></div>
+                <div className={ props.active ? "search-icon active" : "search-icon" } onClick={() => { props.searchShow() }}></div>
                 <button onClick={logar} className="fill">Entrar</button>
                 <img src={icon_cart} className="cart" alt="Cart"/>
             </>

@@ -14,3 +14,15 @@
 #collections .icons li .icon{width: 104px;height: 104px;border-radius: 100%;background-color: #ffffff;margin-bottom: 12px;display: flex;justify-content: center;align-items: center;flex-direction: column;transition-duration: .2s;}
 #collections .icons li .icon.active{box-shadow: 0 4px 25px rgba(0,0,0,.05);}
 #collections .icons li h6{font-size: 14px;font-weight: 700;line-height: 22px;letter-spacing: .75px;color: #474747;}
+
+@media ( max-width: 600px ){
+    #collections{padding: 42px 20px;}
+    #collections h5{font-size: 16px;line-height: 24px;}
+    #collections h5.center{text-align: initial;}
+    #collections .destaques{flex-direction: column;margin-bottom: 80px;}
+    #collections .destaques li{width: 100%;margin-bottom: 10px;}
+    #collections .destaques li:last-child{margin-bottom: 0;}
+    #collections .destaques li .content{padding-top: 20px;padding-left: 20px;}
+    #collections .destaques li img{height: 222px;}
+    #collections .icons{width: 100%;justify-content: flex-start;overflow-x: auto;padding-bottom: 16px;}
+}

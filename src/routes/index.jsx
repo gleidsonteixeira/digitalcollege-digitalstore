@@ -1,12 +1,12 @@
 import {Routes, Route} from 'react-router-dom';
-import Login from './../components/pages/login';
-import Signup from './../components/pages/signup';
-import SignupDrip from './../components/pages/signup-drip';
-import Orders from '../components/pages/orders';
-import Notfound from './../components/pages/notfound';
-import Home from '../components/pages/home';
-import Categories from '../components/pages/categories';
-import Products from '../components/pages/products';
+import Login from './../pages/login';
+import Signup from './../pages/signup';
+import SignupDrip from './../pages/signup-drip';
+import Orders from '../pages/orders';
+import Notfound from './../pages/notfound';
+import Home from '../pages/home';
+import Categories from '../pages/categories';
+import Products from '../pages/products';
 
 const Ways = () => {
     return(

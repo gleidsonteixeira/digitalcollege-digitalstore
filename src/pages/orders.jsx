@@ -1,6 +1,6 @@
 import React from "react";
-import Head from "../head";
-import Foot from "../foot";
+import Head from "./../components/head";
+import Foot from "./../components/foot";
 import "./pages.css";
 
 export default function Orders(){

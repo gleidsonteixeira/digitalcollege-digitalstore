@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Foot from "../foot";
+import Foot from "./../components/foot";
 import "./pages.css";
-import logo from "./../../assets/logo_digital_store.png";
+import logo from "./../assets/logo_digital_store.png";
 
 export default function Signup(){
     

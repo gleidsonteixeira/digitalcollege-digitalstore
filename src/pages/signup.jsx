@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Foot from "../foot";
+import Foot from "./../components/foot";
 import "./pages.css";
-import logo from "./../../assets/logo_digital_store.png";
-import tenis1 from "./../../assets/tenis1.png";
-import tenis2 from "./../../assets/tenis2.png";
-import icon_google from "./../../assets/icon_google.png";
-import icon_facebook from "./../../assets/icon_facebook.png";
+import logo from "./../assets/logo_digital_store.png";
+import tenis1 from "./../assets/tenis1.png";
+import tenis2 from "./../assets/tenis2.png";
+import icon_google from "./../assets/icon_google.png";
+import icon_facebook from "./../assets/icon_facebook.png";
 
 export default function Signup(){
     

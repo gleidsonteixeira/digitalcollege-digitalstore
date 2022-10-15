@@ -19,8 +19,8 @@ header .search form{height: 60px;border-radius: 4px;background-color: #F9F8FE;di
 header .search form input{height: 60px;padding-left: 24px;background-color: transparent;flex: 1;}
 header .search form input:focus{outline: none;}
 header .search form button{width: 60px;height: 60px;position: relative;background-color: transparent;}
-header .search form button::before{content: "";width: 18px;height: 18px;border: 2px solid #666666;position: absolute;top: calc(50% - 9px);left: calc(50% - 9px);border-radius: 15px;}
-header .search form button::after{content: "";width: 6px;height: 2px;background-color: #666666;position: absolute;top: calc(50% + 10px);left: calc(50% + 8px);transform: rotate(45deg);}
+header .search form button::before{content: "";width: 18px;height: 18px;border: 2px solid #666666;position: absolute;top: calc(50% - 9px);left: calc(50% - 9px);border-radius: 15px;opacity: .5s;}
+header .search form button::after{content: "";width: 6px;height: 2px;background-color: #666666;position: absolute;top: calc(50% + 10px);left: calc(50% + 8px);transform: rotate(45deg);opacity: .5s;}
 header .search form button:hover::before{border-color: #C92071;}
 header .search form button:hover::after{background-color: #C92071;}
 header .user-info{display: flex;align-items: center;position: relative;z-index: 1;}
@@ -37,19 +37,23 @@ header .user-info button:hover{color: #FFFFFF;background-color: #991956;}
 header .user-info .search-icon{width: 24px;height: 24px;position: relative;background-color: transparent;margin-right: 16px;display: none;}
 header .user-info .search-icon::before{content: "";width: 14px;height: 14px;border: 2px solid #CCCCCC;position: absolute;top: calc(50% - 9px);left: calc(50% - 9px);border-radius: 15px;}
 header .user-info .search-icon::after{content: "";width: 6px;height: 2px;background-color: #CCCCCC;position: absolute;top: calc(50% + 7px);left: calc(50% + 4px);transform: rotate(45deg);}
-header .user-info .search-icon:hover::before{border-color: #C92071;}
-header .user-info .search-icon:hover::after{background-color: #C92071;}
+header .user-info .search-icon:hover::before,
+header .user-info .search-icon.active::before{border-color: #C92071;}
+header .user-info .search-icon:hover::after,
+header .user-info .search-icon.active::after{background-color: #C92071;}
 
 @media ( max-width: 600px ){
-    header{padding: 20px 24px;position: fixed;width: 100%;top: 0;left: 0;background-color: #FFFFFF;}
+    header{padding: 20px 24px;position: fixed;width: 100%;top: 0;left: 0;background-color: #FFFFFF;z-index: 10;}
     header .menu-btn{display: block;position: relative;}
-    header .menu-btn::after{content: "";width: 20px;height: 2px;background-color: #474747;position: absolute;top: calc(50% - 1px);left: 1;}
+    header .menu-btn::after{content: "";width: 24px;height: 2px;background-color: #474747;position: absolute;top: calc(50% - 1px);left: 1;}
+    header .menu-btn::before{content: "";width: 24px;height: 20px;border-top: 2px solid #474747;border-bottom: 2px solid #474747;position: absolute;left: 0;top: calc(50% - 10px);box-sizing: border-box;}
     header img{height: 24px;}
-    header ul{width: calc(100% - 80px);height: 100vh;padding: 30px;padding-top: 139px;background-color: #FFFFFF;bottom: 0;left: -100%; position: fixed;display: initial;transition-duration: .2s;}
+    header ul{width: calc(100% - 80px);height: 100vh;padding: 30px;padding-top: 139px;background-color: #FFFFFF;bottom: 0;left: -100%; position: fixed;display: initial;transition-duration: .3s;transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);}
     header ul::after{content: "Páginas";font-size: 16px;line-height: 24px;font-weight: 700;letter-spacing: .75px;position: absolute;top: 99px;left: 30px;}
     header ul.active{left: 0%;}
     header ul li a{display: inline-block;}
-    header .search{display: none;}
+    header .search{width: 100%;position: fixed;top: 69px;left: 0;background-color: #FFFFFF;margin: 0;padding: 16px 24px;opacity: 0;visibility: hidden;transition-duration: .2s;}
+    header .search.active{opacity: 1;visibility: visible;}
     header .user-info .search-icon{display: initial;}
     header .user-info img{margin-right: 0;}
     header .user-info a,

@@ -9,7 +9,6 @@ export default function Banner(){
     return(
         <>
             <section className="banner">
-                <div className="detalhe"></div>
                 <div className="content">
                     <h6>Melhores ofertas personalizadas</h6>
                     <h2>Queima de<br/>stoque Nike🔥</h2>

@@ -1,0 +1,22 @@
+.produtos-alta{padding: 92px 100px;background-color: #F9F8FE;}
+.produtos-alta h5{font-size: 24px;font-weight: 700;line-height: 38px;letter-spacing: .75px;margin-bottom: 20px;color: #474747;}
+.produtos-alta ul{display: flex;flex-wrap: wrap;}
+.produtos-alta ul li{width: calc(25% - 18px);margin-right: 24px;margin-bottom: 40px;}
+.produtos-alta ul li:nth-child(4n){margin-right: 0;}
+.produtos-alta ul li .image{background-color: #FFFFFF;box-shadow: 6px 16px 30px rgba(105, 98, 98, 0.05);border-radius: 4px;padding: 20px;margin-bottom: 18px;}
+.produtos-alta ul li .image span{display: inline-block;background-color: #E7FF86;padding: 5px 15px;border-radius: 20px;font-weight: 700;font-size: 14px;line-height: 22px;letter-spacing: .75px;text-transform: uppercase;margin-bottom: 10px;}
+.produtos-alta ul li .image img{width: 100%;}
+.produtos-alta ul li h6{font-size: 12px;font-weight: 700;line-height: 24px;letter-spacing: .75px;color: #8F8F8F;}
+.produtos-alta ul li h5{font-weight: 400;font-size: 22px;margin-bottom: 0;}
+.produtos-alta ul li .preco span{font-size: 24px;line-height: 38px;color: #1F1F1F;font-weight: 700;}
+.produtos-alta ul li .preco span.desconto{color: #8F8F8F;font-weight: 400;text-decoration: line-through;margin-right: 10px;}
+
+@media ( max-width: 600px ){
+    .produtos-alta{padding: 80px 20px;}
+    .produtos-alta ul{justify-content: space-between;}
+    .produtos-alta ul li{width: calc(50% - 5px);margin-right: 0;}
+    .produtos-alta ul li h5{font-weight: 500;font-size: 14px;line-height: 22px;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;}
+    .produtos-alta ul li .preco span{font-size: 16px;line-height: 24px;}
+}
+
+
